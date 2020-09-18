@@ -1,14 +1,30 @@
 table, th, td{
-  border:1px solid black;
+  border:1px solid pink;
   border-collapse: collapse;
   color: pink;
+}
+th, td{
+    width: 150px;
+    height: 30px;
+}
+tr:nth-child(odd){
+  background-color: green;
+}
+tr:nth-child(even){
+  background-color: yellow;
 }
 th{
   background-color: orange;
 }
-tr:nth-child(odd){
-  background-color: purple;
+td:nth-child(1), th:nth-child(1){
+  text-align: left;
 }
-tr:nth-child(even){
-  background-color:yellow;
+td:nth-child(4), th:nth-child(4){
+  text-align: right;
+}
+td:nth-child(2), th:nth-child(2){
+  text-align: center;
+}
+td:nth-child(3), th:nth-child(3){
+  text-align: center;
 }
