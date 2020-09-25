@@ -1,0 +1,24 @@
+table{
+  height:200px;
+  width:300px;
+  border-collapse: collapse;
+}
+td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.tdnr1{
+  background-color:blue;
+}
+.tdnr2{
+  background-color:red;
+}
+.tdnr3{
+  background-color:yellow;
+}
+.tdnr4{
+  background-color:black;
+}
+.tdnr5{
+  background-color:green;
+}
