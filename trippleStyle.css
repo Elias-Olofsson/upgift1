@@ -1,3 +1,55 @@
 title{
-  color: blue;
+  color: darkred; /*gör de riktiga titlarna mörkröda om någon skulle hitta nån*/
+}
+head, body{
+  background-color: lightblue; /*gör så att bakgrundsfärgen blir jusblå*/
+}
+img{
+  width: 400px;
+  height: 200px;
+}
+table{
+  border-collapse:collapse ; /*gör så att gränserna överlappar varandra*/
+}
+td, th{
+  border:1px solid lightblue; /*gör en pixlar rjocka gränser med jusblå*/
+}
+.th1och4{
+  color: lightyellow;
+  background-color: white; /*gör att klassen, som innehåller th nr 1 och th nr 2, får ljusgul färg med vit bakgrund*/
+}
+#th2{
+  color: green;
+  background-color: yellow; /*gör att id th2, som innehåller th nr 2, får grön färg med gul bakgrund*/
+}
+#th3{
+  color: red;
+  background-color: lightblue; /*gör att id th3, som innehåller th nr 3, får röd färg med ljusblå bakgrund*/
+}
+tr:nth-child(even){
+  color: lightgreen;
+  background-color: lightblue;
+  text-align: right;            /*gör så varrannan rad får text med ljusgrön färg med ljusbå bakgrund och är på höger sida*/
+}
+tr:nth-child(odd){
+  color: darkred;
+  background-color: brown;
+  text-align: center;           /*gör så varrannan rad får text med mörkröd färg med brun bakgrund och är i mitten*/
+}
+body{
+  display: grid; /*gör en 4*4 grid över hela sidan man ser*/
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+nav{ /*sätter ut den blåa understrukna texten som gör att användaren kan lätt byta sida i griden*/
+  grid-area: 1 / 1 / span 1 / span 4;
+}
+header{ /*sätter ut typ titeln i griden*/
+  grid-area: 2 / 1 / span 1 / span 4;
+}
+main{ /*sätter ut innehållet i griden*/
+  grid-area: 3 / 1 / span 1 / span 4;
+}
+footer{ /*sätter ut mitt namn och klass i griden*/
+  grid-area: 4 / 1 / span 1 / span 4;
 }

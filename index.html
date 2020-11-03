@@ -2,10 +2,39 @@
 <html lang="sv">
   <head>
     <meta charset="utf-8">
-    <link href="trippleStyle.css" rel="stylesheet">
-    <title>index.html</title>
+    <link href="trippleStyle.css" rel="stylesheet"> <!--kopplar html-dokumentet med css-dokumentet-->
+    <title>index</title>
   </head>
-  <body>
+  <body class="container"> <!--class som kan användas för att snabbt ändra på griden-->
+    <nav class="nav"> <!--lika dan-->
+      <a href="index.html">index: how to make links out of pictures</a>
+		  <a href="page2.html">Page2: på gränsen till oläsbar tabell som gämför maträtter</a>
+		  <a href="page3.html">Page3; platser bokstäver har i allfabetet</a>               <!--skapar menyn-->
+		</nav>
+		
+		<header class="header"> <!--class som kan användas för att snabbt ändra på griden-->
+		  <h1> <!--typ titeln-->
+		    index: how to make links out of pictures
+		  </h1>
+		</header>
+		
+		<main class="main"> <!--class som kan användas för att snabbt ändra på griden-->
+      <p>
+        Do you want to learn how to make links out of pictures in html?
+      </p>
     
+      <a href="https://www.w3schools.com/html/html_links.asp"> <!--länken som ska finnas i bilden-->
+        <img src = "20-201846_register-button-png-click-here-to-find-out.png" alt = "clickable picture that you should click"> <!--bild1 som ska ha en länk och vad som ska stå om man bilden inte visas-->
+      </a>
+      <a href="https://berniesanders.com/"> <!--länken som ska finnas i bilden-->
+        <img src = "bild2.png" alt = "clickable picture that you should not click"> <!--bild2 som ska ha en länk och vad som ska stå om den inte visas-->
+      </a>
+    </main>
+    
+    <footer class="footer"> <!--class som kan användas för att snabbt ändra på griden-->
+      <p>
+        Elias Olofsson te18a
+      </p>
+    </footer>
   </body>
 </html>
